@@ -1,0 +1,81 @@
+.sidebar2 {
+    width: 20px; /* Adjust the width as needed */
+    height: 100vh; /* Set height to 100% of the viewport height */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ccc; /* Background color for the sidebar */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Arrange items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    padding: 20px;
+    visibility: visible;
+    z-index: 1000;
+}
+.sidebar-item2 {
+margin-bottom: 10px; /* Add some space between items */
+left: 15px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.sidebar-item2:hover {
+padding: 8px; /* Adjust padding on hover */
+}
+.app-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .content {
+    display: flex;
+    align-items: center;
+    margin-top: 300px;
+    margin-bottom: 50px;
+    padding: 20px;
+  }
+  
+  .image {
+    flex: 1;
+  }
+  
+  .text {
+    flex: 2;
+  }
+
+  .content-item {
+    display: flex;
+    align-items: center;
+    margin-top: 200px;
+    margin-bottom: 300px;
+    gap: 50px;
+    animation: fadeIn 0.8s ease forwards; /* Animation duration and timing */
+    margin-bottom: 20px;
+  }
+  
+  .image {
+    flex: 0 0 auto;
+    margin-left: 20px;
+  }
+  
+  .text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: left; /* Align text vertically */
+  }
+  
+  .text h2,
+  .text p {
+    text-align: left; /* Align text horizontally */
+  }
+
+  .about-me-container {
+    text-align: left;
+  }
+  h1{
+    text-align: center;
+  }
+  

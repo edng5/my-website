@@ -1,0 +1,392 @@
+/* styles.css */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .about-me {
+    margin: 20px; /* Add margin to the about me section */
+  }
+  
+  .social-icons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px; /* Adjust the gap between the icons */
+
+  }
+  
+  .about-me-content {
+    display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  gap: 20px; /* Adjust the gap between the text and image */
+  }
+  
+  .about-me-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .about-me-image img {
+    width: 200px; /* Adjust the image size as needed */
+    border-radius: 50%; /* Make it circular */
+  }
+  
+  .about-me-text {
+    text-align: left; /* Align text to the left */
+  }
+  
+  .about-me-text h2 {
+    margin-bottom: 10px; /* Add some space below the heading */
+  }
+
+  .portrait-container {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .portrait {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+  }
+  
+  .summary {
+    margin-left: 20px;
+  }
+  
+  .learn-more-link {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #ccc;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .learn-more-link:hover {
+    background-color: #ccc;
+  }
+  
+  .navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  .section {
+    padding: 20px;
+    margin: 20px 0;
+  }
+  
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    grid-gap: 20px;
+  }
+  
+/* styles.css */
+.project-card {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  
+  .project-image {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease;
+  }
+  
+  .project-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    transition: opacity 0.3s ease;
+  }
+  
+  .project-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .project-description {
+    font-size: 16px;
+  }
+  
+  .project-card:hover .project-info {
+    opacity: 1;
+  }
+  
+  
+  .project-card:hover .project-image {
+    opacity: 0.1; /* Adjust opacity as desired */
+  }
+  
+  .project-title a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .back-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .back-to-top-btn.show {
+    display: block;
+  }
+  .section {
+    text-align: center; /* Center-align the section content */
+    margin-left: 150px; /* Adjust as needed */
+    margin-right: 150px; /* Adjust as needed */
+  }
+  
+  .contact-content {
+    display: flex; /* Use flexbox to center content */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center-align items horizontally */
+  }
+  
+  .social-links {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin-top: 20px; /* Add space between the paragraph and social links */
+  }
+  
+  .social-links li {
+    margin-bottom: 10px; /* Add space between each social link */
+  }
+  
+  .social-links li a {
+    display: flex; /* Use flexbox to align icon and text horizontally */
+    align-items: center; /* Center-align items horizontally */
+    color: #000000; /* Set text color */
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  .social-links li a span {
+    margin-left: 5px; /* Add space between icon and text */
+  }
+  .about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .about-me-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .about-me-image {
+    margin-right: 20px; /* Adjust the margin as needed */
+    margin-left: 200px;
+  }
+  
+  .about-me-image img {
+    width: 200px; /* Adjust the image size as needed */
+    border-radius: 50%; /* Make it circular */
+  }
+  
+  .about-me-text {
+    text-align: left; /* Align text to the left */
+    margin-right: 200px; /* Align text to the left */
+  }
+  
+  .about-me-text h2 {
+    margin-bottom: 10px; /* Add some space below the heading */
+  }
+  /* Skills.css */
+ .skills-container {
+    margin: 20px auto; /* Add margin to the container and center it horizontally */
+    max-width: 1200px; /* Set maximum width for the container */
+  }
+  .skill-paper {
+  text-align: center; /* Center-align the text */
+}
+  
+  .section-heading {
+    text-align: center; /* Center the heading */
+    position: relative; /* Set position to relative to position the line */
+  }
+  
+  /* Add a line below each section header */
+  .section-heading::after {
+    content: '';
+    display: block;
+    width: 100%; /* Make the line span the entire width of the container */
+    height: 2px; /* Height of the line */
+    background-color: #ccc; /* Color of the line */
+    position: absolute; /* Set position to absolute to position the line */
+    bottom: -10px; /* Position the line below the header */
+    left: 0; /* Align the line to the left */
+  }
+
+  .grid-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next row */
+    justify-content: space-between; /* Add space between items */
+  }
+  
+  .grid-item {
+    width: calc(25% - 40px); /* Set width for each item and include margin */
+    height: 200px; /* Set fixed height for each item */
+    margin: 20px; /* Add margin around each item */
+  }
+  
+  .skill-paper {
+    border: 1px solid #ccc;
+    padding: 10px; /* Add padding to the skill paper */
+    height: 100%; /* Ensure that the paper fills the entire height of the grid item */
+    display: flex; /* Enable flexbox layout for the paper content */
+    flex-direction: column; /* Set flex direction to column to stack the content */
+    justify-content: space-between; /* Add space between content */
+  }
+  
+  h5 {
+    margin-top: 0; /* Remove default margin for heading */
+  }
+  
+  ul {
+    list-style: none; /* Remove default list style */
+    padding: 0; /* Remove default padding for list */
+  }
+  
+  li {
+    margin-bottom: 5px; /* Add margin between list items */
+  }
+  
+  @media (max-width: 768px) {
+    .grid-item {
+      width: calc(50% - 40px); /* Set width for each item and include margin on smaller screens */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .grid-item {
+      width: calc(100% - 40px); /* Set width for each item and include margin on even smaller screens */
+    }
+  }
+  
+  /* Ensure all grid items have the same size */
+  @media (min-width: 1200px) {
+    .grid-item {
+      width: calc(25% - 40px); /* Set fixed width for each item */
+    }
+  }
+
+.resume-container {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  margin: 30px; /* Adjust margin as needed */
+}
+
+.resume-container img {
+    width: 50px; /* Adjust width as needed */
+    height: 50px; /* Adjust height as needed */
+    margin-right: 10px; /* Adjust margin as needed */
+  }
+
+.resume-column {
+  flex: 1;
+  margin: 0 30px; /* Adjust margin as needed */
+}
+
+.experience-item {
+  display: flex;
+  margin-bottom: 40px; /* Adjust margin as needed */
+}
+
+.experience-icon {
+  margin-right: 20px; /* Adjust margin as needed */
+  margin-top: 20px; /* Adjust margin as needed */
+}
+
+.education-item {
+    display: flex;
+    margin-bottom: 40px; /* Adjust margin as needed */
+  }
+  
+  .education-icon {
+    margin-right: 10px; /* Adjust margin as needed */
+    margin-top: 20px; /* Adjust margin as needed */
+  }
+ul2 {
+    list-style-type: disc; /* Change bullet point style */
+}
+.skills-container {
+    text-align: center;
+  }
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .skills-list li {
+    display: inline-block;
+    background-color: #ccc;
+    color: rgb(58, 58, 58);
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 20px;
+  }

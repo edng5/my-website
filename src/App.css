@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* App.css */
+.app-container {
+  position: relative; /* Set position to relative */
   display: flex;
-  flex-direction: column;
-  align-items: center;
+}
+
+.sidebar {
+  width: 20px; /* Adjust the width as needed */
+  height: 100vh; /* Set height to 100% of the viewport height */
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ccc; /* Background color for the sidebar */
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Arrange items vertically */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  padding: 20px;
+  visibility: visible;
+  z-index: 1000;
+}
+.sidebar-item {
+  margin-bottom: 10px; /* Add some space between items */
+  width: 50px;
+  left: 15px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.sidebar-item:hover {
+  background-color: #ddd; /* Change background color on hover */
+  padding: 8px; /* Adjust padding on hover */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content-container {
+  margin-left: 50px; /* Width of the sidebar */
+  flex: 1; /* Take up remaining space */
+}
+
+.main-content {
+  padding: 20px;
+}
+.MuiTooltip-tooltip {
+  background-color: rgba(0, 0, 0, 0.8); /* Background color */
+  color: #fff; /* Text color */
+  font-size: 14px; /* Font size */
+  border-radius: 4px; /* Border radius */
 }
